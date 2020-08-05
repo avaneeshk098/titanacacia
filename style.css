@@ -182,6 +182,13 @@
   grid-row-end: 1;
 }
 
+#item5{
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
 .ftitle{
   width:100%;
   text-align: center;
