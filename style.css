@@ -312,7 +312,6 @@
     bottom:0;
     top:0;
     left:0;
-    right:75%;
     align-items: center;
     opacity: 100;
   }
@@ -365,6 +364,9 @@
 
   .dropdown-content-in{
     margin-left: 176px;
+  }
+  table{
+    margin-right: 3rem;
   }
 }
 
