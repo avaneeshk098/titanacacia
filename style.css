@@ -230,7 +230,7 @@ a{
 .dropdown-content-in{
   display: none;
   position: absolute;
-  margin-left: 168px !important;
+  margin-left: 152px;
   min-width: 152px;
   top: 0;
   background-color: #fff;
@@ -381,7 +381,7 @@ a{
   }
 
   .dropdown-content-in{
-    margin-left: 176px;
+    margin-left: 168px;
   }
   table{
     margin-right: 3rem;
