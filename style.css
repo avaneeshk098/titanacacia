@@ -5,9 +5,15 @@
   margin:0;
 }
 .navbar {
+  box-shadow: 0px 4px 8px 0px #CDCDCD;
   overflow: hidden;
   background-color: #0091F8;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+  outline: none;
+  border: none;
 }
 
 #governor{
@@ -47,7 +53,7 @@
 .link{
   display: inline-block;
   font-weight: 400;
-  min-width: 160px;
+  min-width: 152px;
 }
 
 #nav-links{
@@ -75,7 +81,7 @@
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
-  min-width: 160px;
+  min-width: 152px;
   outline: none;
   cursor: pointer;
   color: white;
@@ -93,9 +99,9 @@
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: #fff;
-  min-width: 160px;
+  min-width: 152px;
+  position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -224,8 +230,8 @@
 .dropdown-content-in{
   display: none;
   position: absolute;
-  margin-left: 160px;
-  min-width: 160px;
+  margin-left: 168px !important;
+  min-width: 152px;
   top: 0;
   background-color: #fff;
   color: #000;
@@ -298,6 +304,7 @@
 
   .dropdown-content{
     width: 100%;
+    position: absolute;
   }
 
   .dropdown-content a:hover {
@@ -381,6 +388,12 @@
   }
 }
 
+@media screen and (min-width: 1200px){
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+}
+
 table{
 	border-collapse: collapse;
 	margin-left: 3rem;
@@ -436,7 +449,8 @@ th, td{
 	height: 2rem;
 	background-color: #18A0FB;
 	outline: none;
-	border: none;
+  border: none;
+  font-weight: 900;
 	color: white;
 	border-radius: 4px;
 }
