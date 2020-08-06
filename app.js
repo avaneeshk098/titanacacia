@@ -89,7 +89,7 @@ function generateHtmlTable(data) {
 				html += '<td class="data">';
 				if(index == 4 && colData !="#"){
 					html += '<a href="';
-					html += colData;
+					html += "register.html";
 					html += '"><button class="tlink">'+'Register Here'+'</button></a>';
 				}
 				else if(colData == "#"){
