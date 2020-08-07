@@ -285,6 +285,10 @@ a{
   align-self: center !important;
 }
 
+#nav-links.show-nav{
+  display: flex !important;
+}
+
 @media screen and (max-width: 768px){
   #item1 {
     text-align: center;
@@ -307,10 +311,6 @@ a{
 
   #item5{
     margin-bottom: 2rem;
-  }
-
-  #nav-links.show-nav{
-    display: flex;
   }
 }
 
