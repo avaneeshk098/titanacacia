@@ -80,6 +80,7 @@ function generateHtmlTable(data) {
 				html += colData;
 				html += '</th>';
 			});
+			html+= '<th class="heading">Link to Verify Registration Status</th>'
 			html += '</tr>';
 			html += '</thead>';
 			html += '<tbody>';
@@ -97,14 +98,15 @@ function generateHtmlTable(data) {
 				}
 				else if(index == 5){
 					html += '<a href="';
-					html += colData;
-					html += '"><button class="tlink">'+'Vote Here'+'</button></a>';
+					html += 'poll.html';
+					html += '"><button class="tlink">'+'Check Here'+'</button></a>';
 				}
 				else{
 					html += colData;
 				}
 				html += '</td>';
 			});
+			html+='<td class="data"><a href="verify.html"><button class="tlink">Verify Here</button></a></td>'
 			html += '</tr>';
 		  }
 		});

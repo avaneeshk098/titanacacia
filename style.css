@@ -11,6 +11,10 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+#csv-display{
+  overflow: overlay;
+}
+
 a{
   outline: none;
   border: none;
@@ -272,6 +276,44 @@ a{
   text-align: right;
 }
 
+.voteamerica-embed{
+  width: 80% !important;
+  padding-top: 55px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 55px;
+  align-self: center !important;
+}
+
+@media screen and (max-width: 768px){
+  #item1 {
+    text-align: center;
+  }
+
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 50vH;
+  }
+
+  #item3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #item4{
+    margin-bottom: 2rem;
+  }
+
+  #item5{
+    margin-bottom: 2rem;
+  }
+
+  #nav-links.show-nav{
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 1200px){
 
   .dropbtn{
@@ -348,32 +390,6 @@ a{
     cursor: pointer;
   }
 
-  #item1 {
-    text-align: center;
-  }
-
-  .grid-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #item3{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  #item4{
-    margin-bottom: 2rem;
-  }
-
-  #item5{
-    margin-bottom: 2rem;
-  }
-
-  #nav-links.show-nav{
-    display: flex;
-  }
-
   .dropdown-content{
     background-color: #fff;
     right: 0%;
@@ -384,7 +400,16 @@ a{
     margin-left: 168px;
   }
   table{
-    margin-right: 3rem;
+    margin-left: 0 !important;
+  }
+
+  .voteamerica-embed{
+    width: 80% !important;
+    padding-top: 108px;
+    padding-left: 10%;
+    padding-bottom: 55px;
+    padding-right: 10%;
+    align-self: center !important;
   }
 }
 
