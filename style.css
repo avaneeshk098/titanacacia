@@ -34,7 +34,6 @@ body{
 
 iframe{
   margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 
 #csv-display{
@@ -200,10 +199,6 @@ a{
     padding-bottom: 1.5rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 #item1{
@@ -368,7 +363,6 @@ a{
   }
 
   iframe{
-    height: 100vH !important; 
     margin-top: 8rem;
   }
 
@@ -472,14 +466,12 @@ a{
     width: 80% !important;
     padding-top: 108px;
     padding-left: 10%;
-    padding-bottom: 55px;
     padding-right: 10%;
     align-self: center !important;
   }
 
-  .grid-container{
-    position: absolute !important;
-    bottom: 0 !important;
+  #container{
+    margin-top: 5rem !important;
   }
 }
 
@@ -491,13 +483,16 @@ a{
 
 
 #container {
-	height: 2rem;
-  width: 40%;	
-	margin-top: 4rem;
+	min-height: 3rem;	
+	margin-top: 2rem;
 	background-color: #18A0FB;
-	border: none;
+  border: none;
+  font-size: 16px;
+  border: none; 
+  outline: none;
 	box-shadow: 2px 2px 4px black;
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 60%;
   color: white;
 	padding-left: 0.5rem;
 	border-radius: 6px;
