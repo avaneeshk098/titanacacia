@@ -7,7 +7,8 @@
 .navbar {
   box-shadow: 0px 4px 8px 0px #CDCDCD;
   overflow: hidden;
-  background-color: #0091F8;
+  background: rgb(233,125,114);
+  background: linear-gradient(90deg, rgba(233,125,114,1) 0%, rgba(232,108,95,1) 30%, rgba(237,75,59,1) 60%, rgba(230,86,71,1) 100%);
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -151,7 +152,7 @@ a{
     display: grid;
     grid-column-gap: 4rem;
     padding-top: 1.5rem;
-    background-color: #0091F8;
+    background-color: #5DADE2;
     color: #fff;
     font-family: "Noto Sans KR", sans-serif;
     padding-bottom: 1.5rem;
@@ -217,7 +218,7 @@ a{
 }
 
 .flink:hover{
-  background-color: #f86700;
+  background-color: #e2925d;
 }
 
 .line{

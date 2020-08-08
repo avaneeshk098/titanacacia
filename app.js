@@ -24,17 +24,6 @@ $(document).ready(function(){
 	for(i = 0;i < document.getElementsByClassName("dropdown-content-in").length;i++){
 		document.getElementsByClassName("dropdown-content-in")[i].style.top =  i*48 + 'px';	
 	}
-
-	$.ajax({
-		  	type: "GET",  
-		  	url: "data.csv",
-		  	dataType: "text",       
-		  	success: function(response)  
-		  	{
-		  		data = $.csv.toArrays(response);
-				generateHtmlTable(data);
-			}
-		});
 	$("#container").change(function(){
 		$("#csv-display").css("display:none;");
 		$.ajax({
