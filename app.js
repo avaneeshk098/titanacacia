@@ -20,7 +20,7 @@ $(document).ready(function(){
 			$("#dropdown3").toggleClass("show3");
 		});
 	}
-
+	$(".grid-container").addClass("fixed");
 	for(i = 0;i < document.getElementsByClassName("dropdown-content-in").length;i++){
 		document.getElementsByClassName("dropdown-content-in")[i].style.top =  i*48 + 'px';	
 	}
@@ -56,11 +56,13 @@ function generateHtmlTable(data) {
     var html = `<div" id=${cnt} class="item">`
 	  if(data[0] == "selected"){
 		$('#csv-display').empty();
+		$(".grid-container").addClass("fixed");
 	  }
       else if(typeof(data[0]) === 'undefined'){
       	return null;
 	  }
       else {
+		$(".grid-container").removeClass("fixed");
 		$.each(data, function( index, row ) {
 		  //bind header
 		  if(index != 0) {
