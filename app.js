@@ -34,7 +34,7 @@ $(document).ready(function(){
 		  	{
 		  		var rdata = [];
 				data = $.csv.toArrays(response);
-				for(i = 1; i < 51;  i++){
+				for(i = 1; i < 52;  i++){
 					if(data[i][0] == $("#container").find(':selected').data("state")){
 						rdata.push(data[0]);
 						rdata.push(data[i]);
