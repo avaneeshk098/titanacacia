@@ -68,28 +68,28 @@ function generateHtmlTable(data) {
 		  if(index != 0) {
 			$.each(row, function( index, colData ) {
 				if(index == 0){
-					html+=`<h1 class="item-heading">${colData}</h1>`
+					html+=`<h1 class="item-heading sub-heading-link">${colData}</h1>`
 				}
 				else if(index == 1){
-					html+=`<p class="sub-heading"><b>In Person Registration Deadline: </b>${colData}</p>`
+					html+=`<p class="sub-heading sub-heading-data"><b>In Person Registration Deadline: </b>${colData}</p>`
 				}
 				else if(index == 2){
-					html+=`<p class="sub-heading"><b>Postmarked Mail Registration Deadline: </b>${colData}</p>`
+					html+=`<p class="sub-heading sub-heading-data"><b>Postmarked Mail Registration Deadline: </b>${colData}</p>`
 				}
 				else if(index == 3){
-					html+=`<p class="sub-heading"><b>Online Registration Deadline: </b>${colData}</p>`
+					html+=`<p class="sub-heading sub-heading-data"><b>Online Registration Deadline: </b>${colData}</p>`
 				}
 				else if(index == 4 && colData !="#"){
-					html+="<p class='sub-heading'><b>Link to Registration:<br/></b></p>"
+					html+="<p class='sub-heading sub-heading-link'><b>Voter Registration:<br/></b></p>"
 					html += '<a href="';
 					html += "register.html";
 					html += '"><button class="tlink">'+'Register Here'+'</button></a>';
 				}
 				else if(colData == "#"){
-					html+='<p class="sub-heading">No Online Registration</span>'
+					html+='<p class="sub-heading sub-heading-link">No Online Registration</span>'
 				}
 				else if(index == 5){
-					html+="<p class='sub-heading'><b>Link to Check Polling Place:<br/></b></p>"
+					html+="<p class='sub-heading sub-heading-link'><b>Check Polling Place:<br/></b></p>"
 					html += '<a href="';
 					html += 'poll.html';
 					html += '"><button class="tlink">'+'Check Here'+'</button></a>';
@@ -98,7 +98,7 @@ function generateHtmlTable(data) {
 					html += `<p>${colData}</p>`;
 				}
 			});
-			html+="<p class='sub-heading'><b>Link to Verify Registration Status:<br/></b></p>"
+			html+="<p class='sub-heading sub-heading-link'><b>Verify Registration Status:<br/></b></p>"
 			html+='<a href="verify.html"><button id="verify" class="tlink">Verify Here</button></a>'
 		  }
 		});

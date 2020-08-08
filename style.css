@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 /* Navbar container */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Ubuntu+Condensed&display=swap');
+@font-face{
+  font-family: Cheque;
+  src: url("Cheque-Regular.ttf.woff");
+}
+@font-face{
+  font-family: Archive;
+  src: url("Archive.otf")
+}
 *{
   margin:0;
   z-index: 1;
@@ -14,6 +23,15 @@
   background: linear-gradient(90deg, rgba(233,125,114,1) 0%, rgba(232,108,95,1) 30%, rgba(237,75,59,1) 60%, rgba(230,86,71,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e97d72",endColorstr="#e65647",GradientType=1);
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sub-heading-link{
+  font-family: Archive !important;
+}
+
+
+.sub-heading-data{
+  font-family: Cheque !important;
 }
 
 .item-heading{
@@ -40,10 +58,10 @@ iframe{
 #csv-display{
   overflow: overlay;
   text-align: center;
-  width: 40%;
+  width: 60%;
   box-shadow: 0px 8px 16px 0px #CDCDCD;
   margin-bottom: 4rem;
-  margin-left: 30%;
+  margin-left: 20%;
   background-color: #EFEFEF;
   border-radius: 10px;
 }
@@ -492,18 +510,18 @@ a{
 #container {
 	min-height: 3rem;	
 	margin-top: 2rem;
-	background-color: #18A0FB;
+	background-color: #95A5A6;
   border: none;
   font-size: 16px;
   border: none; 
   outline: none;
-	box-shadow: 2px 2px 4px black;
+  font-family: "Mulish", sans-serif !important;
+	box-shadow: 2px 2px 4px #989898;
   margin-bottom: 2rem;
   width: 60%;
   color: white;
 	padding-left: 0.5rem;
 	border-radius: 6px;
-	font-family: "Montserrat", sans-serif;
 }
 
 .opt{
