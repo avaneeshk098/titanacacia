@@ -39,8 +39,8 @@ $(document).ready(function(){
 						rdata.push(data[0]);
 						rdata.push(data[i]);
 					}
-					else if($("#container").find(":selected").data("state") == "Select"){
-						rdata.push(data[i-1]);
+					else if($("#container").find(":selected").data("state") == "None"){ 
+						rdata.push("selected");
 					}
 				}
 				generateHtmlTable(rdata);
@@ -53,54 +53,54 @@ var cnt = 0;
 
 function generateHtmlTable(data) {
 	cnt++;
-    var html = `<table  class="table table-condensed table-hover table-striped" id=${cnt}>`
-
-      if(typeof(data[0]) === 'undefined'){
+    var html = `<div" id=${cnt} class="item">`
+	  if(data[0] == "selected"){
+		$('#csv-display').empty();
+	  }
+      else if(typeof(data[0]) === 'undefined'){
       	return null;
-      }
+	  }
       else {
 		$.each(data, function( index, row ) {
 		  //bind header
-		  if(index == 0) {
-			html += '<thead>';
-			html += '<tr class="row">';
+		  if(index != 0) {
 			$.each(row, function( index, colData ) {
-				html += '<th class="heading">';
-				html += colData;
-				html += '</th>';
-			});
-			html+= '<th class="heading">Link to Verify Registration Status</th>'
-			html += '</tr>';
-			html += '</thead>';
-			html += '<tbody>';
-		  } else {
-			html += '<tr class="row">';
-			$.each(row, function( index, colData ) {
-				html += '<td class="data">';
-				if(index == 4 && colData !="#"){
+				if(index == 0){
+					html+=`<h1 class="item-heading">${colData}</h1>`
+				}
+				else if(index == 1){
+					html+=`<p class="sub-heading"><b>In Person Registration Deadline: </b>${colData}</p>`
+				}
+				else if(index == 2){
+					html+=`<p class="sub-heading"><b>Postmarked Mail Registration Deadline: </b>${colData}</p>`
+				}
+				else if(index == 3){
+					html+=`<p class="sub-heading"><b>Online Registration Deadline: </b>${colData}</p>`
+				}
+				else if(index == 4 && colData !="#"){
+					html+="<p class='sub-heading'><b>Link to Registration:<br/></b></p>"
 					html += '<a href="';
 					html += "register.html";
 					html += '"><button class="tlink">'+'Register Here'+'</button></a>';
 				}
 				else if(colData == "#"){
-					html+='<span>No Online Registration</span>'
+					html+='<p class="sub-heading">No Online Registration</span>'
 				}
 				else if(index == 5){
+					html+="<p class='sub-heading'><b>Link to Check Polling Place:<br/></b></p>"
 					html += '<a href="';
 					html += 'poll.html';
 					html += '"><button class="tlink">'+'Check Here'+'</button></a>';
 				}
 				else{
-					html += colData;
+					html += `<p>${colData}</p>`;
 				}
-				html += '</td>';
 			});
-			html+='<td class="data"><a href="verify.html"><button class="tlink">Verify Here</button></a></td>'
-			html += '</tr>';
+			html+="<p class='sub-heading'><b>Link to Verify Registration Status:<br/></b></p>"
+			html+='<a href="verify.html"><button id="verify" class="tlink">Verify Here</button></a>'
 		  }
 		});
-		html += '</tbody>';
-		html += '</table>';
+		html += '</div>';
 		$(`#${cnt-1}`).remove();
 		$('#csv-display').append(html);
 	  }
