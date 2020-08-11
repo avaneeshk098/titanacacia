@@ -1,0 +1,725 @@
+/**
+* Template Name: Moderna - v2.1.0
+* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}
+
+a {
+  color: #4fa6d5;
+}
+
+a:hover {
+  color: #45beff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-primary {
+  font-family: "Roboto", sans-serif;
+}
+
+h3{
+  font-size: 1.17em;
+}
+
+.padding-bottom-jack {
+  padding-bottom: 60px;
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f3f8fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #68a4c4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 338px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 385px) {
+  .col {
+    flex: 1 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    flex: 1 50%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .col {
+    flex-basis: 0;
+    flex: 1 33.333%;
+  }
+  .primary {
+    flex-grow: 1;
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background-color: #f3f8fa;
+  min-height: 40px;
+  margin-top: 53px !important;
+}
+
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Our Services
+--------------------------------------------------------------*/
+.services {
+  padding-bottom: 20px;
+}
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box-pink .icon {
+  background: #fceef3;
+}
+
+.services .icon-box-pink .icon i {
+  color: #ff689b;
+}
+
+.services .icon-box-pink:hover {
+  border-color: #ff689b;
+}
+
+.services .icon-box-cyan .icon {
+  background: #e6fdfc;
+}
+
+.services .icon-box-cyan .icon i {
+  color: #3fcdc7;
+}
+
+.services .icon-box-cyan:hover {
+  border-color: #3fcdc7;
+}
+
+.services .icon-box-green .icon {
+  background: #eafde7;
+}
+
+.services .icon-box-green .icon i {
+  color: #41cf2e;
+}
+
+.services .icon-box-green:hover {
+  border-color: #41cf2e;
+}
+
+.services .icon-box-blue .icon {
+  background: #e1eeff;
+}
+
+.services .icon-box-blue .icon i {
+  color: #2282ff;
+}
+
+.services .icon-box-blue:hover {
+  border-color: #2282ff;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 30px;
+}
+
+.contact .info-box {
+  color: #444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #68a4c4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #68a4c4;
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #68a4c4;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #8dbad2;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional Code by Jack */
+
+img {
+  opacity: 0.8;
+  transition: opacity 400ms;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+a {
+  transition: color 400ms, text-shadow 400ms;
+}
+
+a:hover {
+  text-shadow: 0, 0, 4px, #4fa6d5;
+}
+
+svg {
+  fill: #ffd055;
+}
+
+.jackcard {
+  display: flex;
+  position: relative;
+  width: 650px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: 0.5s ease;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/**/
+.jackcard__img {
+  position: relative;
+  width: 225px;
+  height: 100%;
+  background-image: linear-gradient(-120deg, #91d277, #008cb3);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.jackscene {
+  position: absolute;
+  top: 35px;
+  left: -25px;
+  width: 225px;
+  min-height: 325px;
+  z-index: 10;
+}
+
+.jacktitle,
+.jacksubtitle {
+  position: absolute;
+  color: #ffffff;
+  font-size: 72px;
+  opacity: 0.075;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+.jacktitle {
+  transform: rotateZ(-90deg) translateX(-73%) translateY(30%);
+  transform-origin: bottom left;
+}
+.jacksubtitle {
+  bottom: 0;
+  right: 10px;
+}
+/**/
+.jackcard__description {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 325px;
+  height: 100%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.jackcard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+.jackcard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.jackcard__rating {
+  display: flex;
+}
+.jackcard__price {
+  width: 100%;
+  font-size: 32px;
+  text-align: right;
+}
+.jackcard__title,
+.jackcard__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.jackcard__subtitle {
+  font-size: 16px;
+}
+.jackcard__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-radius: 35px;
+  color: #ffffff;
+  background-color: #36d1e7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+.jackcard__button,
+.jackcard__info,
+.jackcolors {
+  transform: translateZ(35px);
+}
+
+/**/
+.jackcolors {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.jackcolor__title {
+  line-height: 2;
+  font-size: 12px;
+  color: #868686;
+  letter-spacing: 1px;
+}
+.jackcolor__container {
+  display: flex;
+}
+.jackcolor__item {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.jackcolor__item:nth-of-type(1) {
+  border: 4px solid #36d1e7;
+}
+.jackcolor__item:nth-of-type(2) {
+  background-color: #394282;
+}
+.jackcolor__item:nth-of-type(3) {
+  border: 4px solid #6bda94;
+}
+.jackcolor__item:nth-of-type(4) {
+  border: 4px solid #fbcb61;
+}
+.jackcolor__item:nth-of-type(5) {
+  border: 4px solid #6a73cf;
+}
+
+canvas {
+  background: #232323;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.team-card-center {
+  text-align: center !important;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.block-level-element {
+  display: block;
+}
+
+.inline-jack {
+  display: inline;
+}
+
+#mission {
+  padding-top: 0;
+}
+
+.margin-bottom-jack {
+  margin-bottom: 1em !important;
+}
+
+.font-large-jack {
+  font-size: 2em;
+}
+
+.margin-top-jack {
+  margin-top: 1em !important;
+}
+
+.z-index-jack {
+  z-index: 100;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.titan-white {
+  color: white !important;
+}
+
+.z-index-20 {
+  z-index: 20;
+}
+
+.padding-bottom-jack {
+  padding-bottom: 60px;
+}
+
+.padding-top-jack {
+  padding-top: 60px;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
+#main .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #68a4c4;
+}
+
+#main .btn-get-started:hover {
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.grey-round-corner {
+  border-radius: 2em;
+  background-color: #fff;
+}
+
+.contact .php-email-form .sent-message-error {
+  display: none;
+  color: #fff;
+  background: #d21821;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+
+.jack-limit-class .info-box {
+  color: #444;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 15px 30px 15px;
+  margin-bottom: 30px;
+}

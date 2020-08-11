@@ -12,9 +12,9 @@
 }
 *{
   margin:0;
-  z-index: 1;
 }
 .navbar {
+  padding: 0 !important;
   box-shadow: 0px 4px 8px 0px #CDCDCD;
   overflow: hidden;
   background: rgb(233,125,114);
@@ -69,6 +69,30 @@ iframe{
 .sub-heading{
   margin-top: 1rem;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+.contact-btn{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #68a4c4;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #68a4c4;
+  background-color: #fff;
+}
+
+.contact-btn:hover{
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
 }
 
 .tlink{
@@ -139,15 +163,14 @@ a{
 .dropdown {
   display: inline-block;
   float: left;
-  overflow: hidden;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
-  border: none;
+  border: none !important;
   min-width: 152px;
-  outline: none;
+  outline: none !important;
   cursor: pointer;
   color: white;
   padding: 14px 16px;
@@ -166,7 +189,7 @@ a{
   display: none;
   background-color: #fff;
   min-width: 152px;
-  position: absolute;
+  position: fixed;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -364,7 +387,6 @@ a{
   .grid-container{
     display: flex;
     flex-direction: column;
-    width: 50vH;
   }
 
   #item3{
@@ -400,11 +422,18 @@ a{
     width: 60% !important;
   }
 
+  #main{
+    margin-top: 53px;
+  }
+
   .navbar{
     position: fixed;
     display: flex;
     right: 0;
+    top: 0;
+    z-index: 1010;
     left: 0;
+    align-items: initial;
     flex-direction: column;
     align-content: left;
     justify-content: left;
