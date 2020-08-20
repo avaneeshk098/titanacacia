@@ -5,11 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
   <title>Joseph R. Biden Jr.</title>
+  <link href="biden.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/e6fc1e7cb7.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-    <link href="biden.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet"/>
+    <script src="register.js" type="text/javascript"></script>
 </head>
 
 <style>
@@ -234,37 +235,37 @@
 		</div>
 	</dl>
 </div>
-	<div class="bdropdown" style="margin-left: 35%;">
+	<div class="bdropdown" style="margin-left: 35%; margin-top: 6rem;">
 		<button class="bdropbtn" style="font-family: 'Muli', sans-serif; border:	3px solid #5D6D7E"><h2>Social Issues</h2></button>
-    <div class="bdropdown-content">
-      <a href="#">Crime & Drugs</a>
+    <div class="bdropdown-content" style="width: 100%; border-radius: 15px;">
+      <a href="#" style="border-top-right-radius: 15px; border-top-left-radius: 15px;">Crime & Drugs</a>
 			<a href="#">Environmentalism</a>
       <a href="#">Gun Policy</a>
       <a href="#">Internet Safety</a>
       <a href="#">LGBTQIA Rights</a>
-      <a href="#">Women's Rights</a>
+      <a href="#" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">Women's Rights</a>
     </div>
 	</div>
-	<div class="bdropdown" style = "margin-left: 54%">
-		<button class="bdropbtn" style="font-family: 'Muli', sans-serif; border:	3px solid #5D6D7E"><h2>Economic Issues</h2></button>
-    <div class="bdropdown-content">
-      <a href="#">Immigration</a>
+	<div class="bdropdown" style = "margin-left: 54%; margin-top: 6rem;">
+		<button class="bdropbtn" style="font-family: 'Muli', sans-serif; border:	3px solid #5D6D7E; width: 100%;"><h2>Economic Issues</h2></button>
+    <div class="bdropdown-content" style="width: 100%;  border-radius: 15px;">
+      <a href="#" style="border-top-right-radius: 15px; border-top-left-radius: 15px;">Immigration</a>
       <a href="#">Business</a>
       <a href="#">Taxes</a>
       <a href="#">Healthcare</a>
-      <a href="#">Federal Budget</a>
+      <a href="#" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">Federal Budget</a>
     </div>
 	</div>
-	<div class="bdropdown" style = "margin-left: 73%">
+	<div class="bdropdown" style = "margin-left: 73%; margin-top: 6rem;">
 		<button class="bdropbtn" style="font-family: 'Muli', sans-serif; border:	3px solid #5D6D7E"><h2>Foreign Issues</h2></button>
-    <div class="bdropdown-content">
-      <a href="#">Americas</a>
+    <div class="bdropdown-content" style="width: 100%;  border-radius: 15px;">
+      <a href="#" style="border-top-right-radius: 15px; border-top-left-radius: 15px;">Americas</a>
       <a href="#">Asia</a>
       <a href="#">Middle East & North Africa</a>
       <a href="#">Sub-Saharan Africa</a>
       <a href="#">Europe</a>
 		  <a href="#">International Organization</a>
-			<a href="#">Trade Policy</a>
+			<a href="#" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">Trade Policy</a>
     </div>
 	</div>
 
@@ -276,7 +277,7 @@
 		</dl>
 
 		<div class="double campaign", id="rcorners4", style="width: 15%; margin-left: 83.25%; color:#ECF0F1; align-items: center; margin-top: 5%;">
-			<div style="font-family: 'Archive', Arial, sans-serif;"><center><b style=" width: 100% !important; text-align: center !important;">Campaign Finance</b></center></div>
+			<div style="font-family: 'Archive', Arial, sans-serif;"><center><b class="campaign-title" style=" width: 100% !important; text-align: center !important;">Campaign Finance</b></center></div>
       <hr>
       <select style="outline: none; border:none; font-family: 'Archive', Arial, sans-serif;" id="campaign">
         <option data-campaign="Select">Select an option</option>
@@ -287,10 +288,10 @@
       </select>
 		</div>
 
-<section class="cd-timeline js-cd-timeline" style="margin-left: 350px; margin-right: 225px; margin-top: 175px; z-index: 0;">
+<section class="cd-timeline js-cd-timeline" style="margin-left: 350px; margin-right: 17rem; margin-top: 10rem; z-index: -1; position: relative;">
     <div class="container max-width-lg cd-timeline__container">
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
+        <div class="cd-timeline__img cd-timeline__img--picture" style="background-color: rgb(93, 173, 226);">
           <!-- <img src="assets/img/cd-icon-picture.svg" alt="Picture"> -->
         </div> <!-- cd-timeline__img -->
 
@@ -299,7 +300,7 @@
           <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
+            <span class="cd-timeline__date" style="text-align: left;">Jan 14</span>
             <a href="#0" class="btn btn--subtle">Read more</a>
           </div>
         </div> <!-- cd-timeline__content -->
@@ -322,7 +323,7 @@
       </div> <!-- cd-timeline__block -->
 
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
+        <div class="cd-timeline__img cd-timeline__img--picture" style="background-color: rgb(93, 173, 226);">
           <!-- <img src="assets/img/cd-icon-picture.svg" alt="Picture"> -->
         </div> <!-- cd-timeline__img -->
 
@@ -331,14 +332,14 @@
           <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
+            <span class="cd-timeline__date" style="text-align: left;">Jan 24</span>
             <a href="#0" class="btn btn--subtle">Read more</a>
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
 
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
+        <div class="cd-timeline__img cd-timeline__img--location" style="background-color: #bf3b44;">
           <!-- <img src="assets/img/cd-icon-location.svg" alt="Location"> -->
         </div> <!-- cd-timeline__img -->
 
@@ -354,7 +355,7 @@
       </div> <!-- cd-timeline__block -->
 
       <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
+        <div class="cd-timeline__img cd-timeline__img--location" style="background-color: rgb(93, 173, 226);">
           <!-- <img src="assets/img/cd-icon-location.svg" alt="Location"> -->
         </div> <!-- cd-timeline__img -->
 
@@ -363,7 +364,7 @@
           <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
 
           <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
+            <span class="cd-timeline__date" style="text-align: left;">Feb 18</span>
             <a href="#0" class="btn btn--subtle">Read more</a>
           </div>
         </div> <!-- cd-timeline__content -->

@@ -88,29 +88,34 @@
                       for(i = 2; i < 12; i++){
                           gdata.push(data[i][0].split(' - '));
                       }
+                      document.getElementsByClassName('campaign-title')[0].innerHTML = "Geography";
                       generateHtml(gdata);
                   }
                   else if($("#campaign").find(":selected").data("campaign") == "Industries"){
                       for(i = 2; i < 12; i++){
                           idata.push(data[i][1].split(' - '));
                       }
+                      document.getElementsByClassName('campaign-title')[0].innerHTML = "Industries";
                       generateHtml([], idata);
                   }
                   else if($("#campaign").find(":selected").data("campaign") == "Contributers"){
                       for(i = 2; i < 12; i++){
                           cdata.push(data[i][2].split(' - '));
                       }
+                      document.getElementsByClassName('campaign-title')[0].innerHTML = "Contributers";
                       generateHtml([],[], cdata);
                   }
                   else if($("#campaign").find(":selected").data("campaign") == "Donor Demographics"){
                       for(i = 2; i < 12; i++){
                           ddata.push(data[i][3].split(' - '));
                       }
+                      document.getElementsByClassName('campaign-title')[0].innerHTML = "Donor Demographics";
                       generateHtml([], [], [], ddata);
                   }
                   else{
                       document.getElementById('rcorners4').style.height='325px';
                       $(".content").empty();
+                      document.getElementsByClassName('campaign-title')[0].innerHTML = "Campaign Finance";
                   }
               }   
           });
