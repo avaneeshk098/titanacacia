@@ -62,7 +62,7 @@ dl.double {border-style: double;}
   top: 1575px;
   padding: 20px;
   width: 325px;
-  height: 1000px;
+  height: 1500px;
 }
 #rcorners3 {
   border-radius: 15px 15px 0px 0px;
@@ -139,6 +139,7 @@ dt {
 }
 
 a {
+	margin-left: -10px;
 	background-color: rgb(93, 173, 226);
 	transition: padding 0.6s, opacity 0.6s;
 }
