@@ -52,17 +52,17 @@ dl.double {border-style: double;}
   top: 350px;
   padding: 20px;
   width: 325px;
-  height: 1200px;
+  height: 1050px;
 }
 #rcorners2 {
   border-radius: 15px;
 	border: 5px solid #5D6D7E;
   background: rgb(93, 173, 226);
   position: absolute;
-  top: 1575px;
+  top: 1425px;
   padding: 20px;
   width: 325px;
-  height: 1500px;
+  height: 1850px;
 }
 #rcorners3 {
   border-radius: 15px 15px 0px 0px;
@@ -85,7 +85,7 @@ dl.double {border-style: double;}
   height: 325px;
 }
 .bdropdown {
-    top:62%;
+    top: 53%;
     position: absolute;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
